@@ -1,0 +1,402 @@
+/* CSS variables */
+:root {
+  --background-color: #000027;
+  --background-color-two: #00008b;
+}
+/* Default browser styling */
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--background-color);
+}
+.general-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 25px;
+  margin-left: 5px;
+  position: relative;
+  align-items: center;
+  /* width: 61%  ; */
+  /* padding: 20px; */
+}
+.general-positioned-div {
+  position: relative;
+}
+.align-text {
+  align-self: center;
+  margin-right: 15px;
+  margin-top: 27px;
+}
+h2 {
+  color: white;
+  margin: 25px;
+}
+/* Navigation bar styling */
+.navbar-styling {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 10px;
+}
+/* Navbar logo styling */
+.navbar-styling i {
+  color: white;
+  display: inline-block;
+  font-size: 40px;
+}
+/* searchbar in navbar */
+#input-search {
+  /* position: relative; */
+  width: 280px;
+  height: 33px;
+  border-radius: 20px;
+  background-color: grey;
+  color: white;
+  padding: 10px;
+  outline: none;
+  border: none;
+  margin-right: 15px;
+}
+#input-search:hover {
+  outline: none;
+}
+::placeholder {
+  color: white;
+  padding-left: 18px;
+}
+/* Mic icon in searchbar */
+#microphone {
+  position: absolute;
+  /* left: -2px; */
+  left: 245px;
+  z-index: 2;
+  font-size: 25px;
+  top: 1px;
+  padding: 4px;
+}
+/* search icon in searchbar */
+#search-icon {
+  position: absolute;
+  font-size: 25px;
+  left: 4px;
+  top: 3px;
+}
+/* notification icon in navbar */
+#bell-icon {
+  margin-right: 15px;
+}
+/* logo in navbar */
+#logo-icon {
+  margin-top: 6px;
+  margin-right: 4px;
+}
+/* *********************************************************************** */
+/* Carousel */
+.carousel-img {
+  width: 260px;
+  height: 260px;
+  margin-right: 4px;
+  /* transition: all 3s ease-in-out; */
+}
+.carousel-img:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 0px 8px gray;
+}
+.carousel-width {
+  width: 61%;
+  height: auto;
+}
+/* ********************************************************************** */
+/* latest release */
+.latest-release-img {
+  height: 150px;
+
+  width: 150px;
+}
+.release {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* width: 90%; */
+  width: 35%;
+  justify-content: space-between;
+  /* border: 1px solid white; */
+  margin-right: 5px;
+  margin-left: 5px;
+  margin-top: 25px;
+}
+.release img {
+  margin-right: 0;
+}
+.release pre {
+  color: white;
+  font-size: 22px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.release-box-margin {
+  padding-left: 0px;
+  padding-right: 0;
+  margin: 0;
+  width: 280px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  /* border: 1px solid red; */
+}
+/* ************************************************************************ */
+/* Popular Artists */
+.artist-img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.artist-img:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 0px 8px gray;
+}
+.artist-name {
+  color: white;
+  text-align: center;
+}
+/* ************************************************************************ */
+/* Genres */
+.genres {
+  background-color: var(--background-color-two);
+  width: 70%;
+  height: auto;
+  padding: 15px;
+  /* margin: auto; */
+  /* border: 2px solid white; */
+}
+.genres-item {
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  height: 110px;
+  width: 110px;
+  padding: 33px;
+  box-sizing: border-box;
+  font-size: 25px;
+  background-position: center;
+  background-size: cover;
+  margin-top: 15px;
+  margin-right: 6px;
+}
+#love {
+  background-image: url("img/love.jpg");
+}
+#retro {
+  background-image: url("img/retro.jpg");
+}
+#chill {
+  background-image: url("img/chill.jpg");
+}
+#workout {
+  background-image: url("img/workout.jpg");
+}
+#rock {
+  background-image: url("img/rock.jpg");
+}
+#pop {
+  background-image: url("img/pop.jpg");
+}
+/* #div3{
+  width: 120px;
+  height: 120px;
+  background-color: darkorange;
+  text-align: center;
+  /* margin: auto; */
+/* padding-top: 45px; */
+/* box-sizing: border-box;
+  position: absolute;
+  top:-15px;
+  left: 18px;
+  margin-top: ; */
+/* bottom: 0; */
+/* } */
+/* #div2{
+  background-color: rgb(119, 119, 15);
+  height: 80px;
+  width: 160px;
+  position: relative;
+  margin-top: 10px;
+   */
+/* }  */
+#div1 {
+  position: relative;
+  background-color: yellow;
+  height: 100px;
+  width: 200px;
+}
+#div2 {
+  position: absolute;
+  background-color: darkgoldenrod;
+  height: 140px;
+  width: 160px;
+  top: -2px;
+  left: 34px;
+}
+#div3 {
+  position: absolute;
+  background-color: orangered;
+  height: 180px;
+  width: 120px;
+  top: -1px;
+  left: 53px;
+  margin: auto;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 75px;
+  color: white;
+  font-size: 25px;
+}
+.station-box {
+  margin-top: 25px;
+}
+.genres-item:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 0px 8px gray;
+}
+/* *********************************************************************************** */
+/* Latest songs */
+.latest {
+  justify-content: flex-start;
+}
+.latest-item {
+  margin: 28px;
+}
+.latest-item img {
+  width: 150px;
+  height: 150px;
+}
+.latest-item p {
+  color: white;
+  font-size: 22px;
+}
+/* ****************************************************************************** */
+/* Queue */
+.queue {
+  position: absolute;
+  top: 120px;
+  left: 70vw;
+  color: white;
+  width: 28%;
+  height: auto;
+}
+.queue-img {
+  width: 100px;
+  height: 100px;
+}
+.queue-margin {
+  margin-right: 16px;
+}
+.queue-popup {
+  display: none;
+  position: absolute;
+  left: 52%;
+  top: 60%;
+  width: 100px;
+  height: auto;
+  background-color: white;
+  color: black;
+  white-space: nowrap;
+  padding: 5px;
+}
+#queue-touch:hover + .queue-popup {
+  display: block;
+  /* background-color: yellow; */
+}
+
+/* ************************************************************************************** */
+/* Music Player */
+.music-player {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: grey;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.music-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* width: 30%; */
+  padding: 5px;
+  flex-wrap: nowrap;
+}
+#music-time {
+  width: 250px;
+  background-color: lightgray;
+  height: 9px;
+  border-radius: 3px;
+  display: inline-block;
+  position: relative;
+}
+#music-duration {
+  width: 120px;
+  height: 9px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: green;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  display: inline-block;
+}
+/* ************************************************************************************ */
+/* single artist page */
+/* Single artist banner */
+.single-artist-banner {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  height: auto;
+  width: 60%;
+  background-color: var(--background-color-two);
+  color: white;
+}
+#play-all {
+  width: 130px;
+  height: 40px;
+  color: white;
+  background: linear-gradient(blue, purple);
+}
+/* ********************************************************************************** */
+/* songs list */
+.songs-list {
+  background-color: rgb(99, 95, 95);
+  margin-top: 30px;
+  padding: 12px;
+  height: 100px;
+  box-sizing: border-box;
+  justify-content: flex-start;
+}
+/* *************************************************************************************** */
+/* recently played and similar artists */
+.side {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  position: absolute;
+  top: 26%;
+  left: 70%;
+  color: white;
+}
+.side-item {
+  width: 390px;
+  height: auto;
+  justify-content: space-between;
+  flex-direction: row;
+}

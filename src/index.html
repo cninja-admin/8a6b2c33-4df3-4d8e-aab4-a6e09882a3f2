@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/08d657a362.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Music Player</title>
+  </head>
+  <body>
+    <header>
+      <!-- Navbar -->
+      <nav>
+        <div class="navbar-styling">
+          <div class="general-flex">
+            <i class="fas fa-headphones-alt" id="logo-icon"></i>
+            <pre class="align-text">
+Ninja
+<b>Studio</b>
+            </pre>
+            <h3 class="align-text">Favourites</h3>
+          </div>
+          <div class="general-flex">
+            <div class="general-positioned-div">
+              <i class="fas fa-search" id="search-icon"></i>
+              <input
+                id="input-search"
+                type="search"
+                placeholder="Search"
+                id="search"
+              />
+              <i class="fas fa-microphone" id="microphone"></i>
+            </div>
+
+            <i class="fas fa-bell" id="bell-icon"></i>
+            <i class="far fa-user-circle"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- ******************************************************************************************* -->
+    <main>
+      <!-- Music Carousel -->
+      <section>
+        <div class="general-flex carousel-width">
+          <img src="img/music1.jpg" alt="music image" class="carousel-img" />
+          <img src="img/music2.jpg" alt="music image" class="carousel-img" />
+          <img src="img/music3.jpg" alt="music image" class="carousel-img" />
+        </div>
+      </section>
+      <!-- ******************************************************************************************* -->
+      <!-- Latest release -->
+      <section>
+          <h2>Latest Release</h2>
+        <div class="general-flex" style="justify-content: flex-start; margin: 5px;">
+          <div class="release">
+            <img src="img/justin.jpg" class="latest-release-img" />
+            <div class="general-flex release-box-margin">
+              <pre>
+<b>Onism</b>
+AUG 11, 2017
+                </pre>
+              <pre>
+<i class="fas fa-ellipsis-h"></i>
+4:44
+                </pre>
+            </div>
+          </div>
+
+          <div class="release">
+            <img src="img/justin.jpg" class="latest-release-img" />
+            <div class="general-flex release-box-margin">
+              <pre>
+<b>Onism</b>
+AUG 11, 2017
+                </pre>
+              <pre>
+<i class="fas fa-ellipsis-h"></i>
+4:44
+                </pre>
+            </div>
+          </div>
+
+          <div class="release">
+            <img src="img/justin.jpg" class="latest-release-img" />
+            <div class="general-flex release-box-margin">
+              <pre>
+<b>Onism</b>
+AUG 11, 2017
+                </pre>
+              <pre>
+<i class="fas fa-ellipsis-h"></i>
+4:44
+                </pre>
+            </div>
+          </div>
+
+          <div class="release">
+            <img src="img/justin.jpg" class="latest-release-img" />
+            <div class="general-flex release-box-margin">
+              <pre>
+<b>Onism</b>
+AUG 11, 2017
+                </pre>
+              <pre>
+<i class="fas fa-ellipsis-h"></i>
+4:44
+                </pre>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ********************************************************************************************* -->
+      <!-- Popular artists -->
+      <section>
+          <h2>Popular Artists</h2>
+          <div class="general-flex" style="justify-content: flex-start;">
+            <div>
+              <a href="singleartist.html" style="text-decoration: none">
+                <img src="img/edsheeran.jpg" class="artist-img" alt="Ed Sheeran">
+                <p class="artist-name">Ed Sheeran</p>
+                </a>
+            </div>
+              <div>
+                <a href="singleartist.html" style="text-decoration: none">
+                <img src="img/coldplay.jpg" class="artist-img" alt="Cold Play">
+                <p class="artist-name">Cold Play</p>
+              </a>
+              </div>
+              <div>
+                <a href="singleartist.html" style="text-decoration: none">
+                <img src="img/zayn.jpg" class="artist-img" alt="Zayn Malik">
+                <p class="artist-name">Zayn Malik</p>
+              </a>
+              </div>
+              <div>
+                <a href="singleartist.html" style="text-decoration: none">
+                <img src="img/charlie.png" class="artist-img" alt="Charlie Puth">
+                <p class="artist-name">Charlie Puth</p>
+              </a>
+              </div>
+              <div>
+                <a href="singleartist.html" style="text-decoration: none">
+                <img src="img/imagine.jpg" class="artist-img" alt="Imagine Dragon">
+                <p class="artist-name">Imagine Dragon</p>
+                </a>
+              </div>
+              <div>
+                <a href="singleartist.html" style="text-decoration: none">
+                <img src="img/bruno.jpg" class="artist-img" alt="Bruno Mars">
+                <p class="artist-name">Bruno Mars</p>
+                </a>
+              </div>
+              
+              
+          </div>
+      </section>
+      <!-- ************************************************************************************************* -->
+      <!-- Queue -->
+      <aside>
+        <div class="queue">
+          <div class="general-flex">
+            <div>
+              <h1>Queue</h1>
+            </div>
+            
+
+            <div id="queue-touch">
+              <span style="color:aqua; font-size: 20px">Queue</span>
+              <i class="fas fa-chevron-down" style="color: aqua"></i>
+            </div>
+             <!-- List pop up -->
+      <div class="queue-popup">
+        <div>Playlists</div>
+        <hr>
+        <div>Favourite songs</div>
+      </div>
+            
+          </div>
+
+          <div class="general-flex">
+            <!-- <div>
+              <span>01</span>
+              <img src="img/retro.jpg" alt="music" class="queue-img">
+              <pre><span>Mirage</span>
+<span>Else</span>
+              </pre>
+              
+            </div> -->
+            <div class="general-flex">
+              <span class="queue-margin">01</span>
+              <img src="img/retro.jpg" alt="retro music" class="queue-img queue-margin">
+              <pre>
+<b style="font-size: 20px;">Mirage</b>
+Else                
+              </pre>
+            </div>
+            <i class="far fa-heart"></i>
+            <div class="general-flex">
+              <span class="queue-margin">02</span>
+              <img src="img/retro.jpg" alt="retro music" class="queue-img queue-margin">
+              <pre>
+  <b style="font-size: 20px;">Worry about us</b>
+  Rosie Lowe                
+              </pre>
+            </div>
+            <i class="far fa-heart"></i>
+          </div>
+
+
+        
+          
+        
+          </div>
+
+          
+        
+          
+        </div>
+      </aside>
+     
+      <!-- ******************************************************************************** -->
+      <!-- genres -->
+      <section>
+          <div class="general-flex genres">
+                  <div style="margin-right: 6px;">
+                    <div id="div1" class="station-box"></div>
+                    <div id="div2" class="station-box">
+                              
+                          </div>
+                      <div id = "div3" class="station-box">Stations</div>
+                  </div>
+           
+<div class="genres-item" id="love">
+Love
+</div>
+<div class="genres-item" id="retro">
+    Retro
+    </div>
+    <div class="genres-item" id="chill">
+        Chill
+        </div>
+        <div class="genres-item" id="workout">
+            Work
+            </div>
+            <div class="genres-item" id="rock">
+                Rock
+                </div>
+                <div class="genres-item" id="pop">
+                    Pop
+                   </div>
+          </div>
+      </section>
+      <!-- latest english -->
+      <section>
+        <h2>Latest English</h2>
+        <div class="general-flex latest">
+          
+<div class="latest-item"><img src="img/pop.jpg" alt="music">
+<p>Onism</p>
+<p>AUG 11, 2017</p>
+
+</div>
+<div class="latest-item"><img src="img/pop.jpg" alt="music">
+  <p>Onism</p>
+  <p>AUG 11, 2017</p>
+  
+  </div>
+  <div class="latest-item"><img src="img/pop.jpg" alt="music">
+    <p>Onism</p>
+    <p>AUG 11, 2017</p>
+    
+    </div>
+    <div class="latest-item"><img src="img/pop.jpg" alt="music">
+      <p>Onism</p>
+      <p>AUG 11, 2017</p>
+      
+      </div>
+      <div class="latest-item"><img src="img/pop.jpg" alt="music">
+        <p>Onism</p>
+        <p>AUG 11, 2017</p>
+        
+        </div>
+        </div>
+      </section>
+      <!-- *********************************************************************** -->
+      <!-- Music player -->
+      <div class="music-player">
+        <div class="music-item">
+          <img src="img/love.jpg" alt="musicname" style="height: 100px; width: 100px">
+<pre style="color: white;">
+ <b style="font-size: 20px;">Imagine by Joh</b>
+ John Lennon 
+</pre>
+<i class="far fa-heart" style="padding: 14px; font-size: 20px; color: white;"></i>
+<i class="far fa-circle" style="padding: 14px; font-size: 20px; color: white;"></i>
+        </div>
+
+
+        <div class="music-item">
+          <i class="fas fa-step-backward" style="color: white; font-size: 20px; padding-top: 3px; margin-right: 6px;"></i>
+          <i class="fas fa-pause-circle" style="color: white; font-size: 25px;"></i>
+          <i class="fas fa-step-forward" style="color: white; font-size: 20px; padding-top: 3px; margin-left: 6px;"></i>
+<pre style="padding-top: 15px; margin-left: -150px;">  
+<div id="music-time"><div id="music-duration"></div></pre>
+         
+        </div>
+        <div class="music-item">
+          <i class="fab fa-playstation" style="padding: 14px; font-size: 20px; color: white;"></i>
+          <i class="fas fa-volume-up" style="padding: 14px; font-size: 20px; color: white;"></i>
+          <i class="fas fa-compress-alt" style="padding: 14px; font-size: 20px; color: white;"></i>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
